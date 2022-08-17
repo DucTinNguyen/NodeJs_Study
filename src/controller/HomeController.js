@@ -12,7 +12,7 @@ const getHomePage = (req,res) => {
             address:row.address
         })
     })
-    return res.render('../views/index.ejs',{dataUser:JSON.stringify(data)})
+    return res.render('../views/index.ejs',{dataUser:(data)})
   }
 );
 }
