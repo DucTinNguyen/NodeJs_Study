@@ -3,9 +3,10 @@ import express from "express"
 import configViewEngine from "./configs/viewEngine"
 require('dotenv').config()
 import initWebRouter from './route/web'
+import connection from './configs/connectDB'
 //set up port
 const app = express()
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 console.log('port',port);
 //set up  viewEngine  
 configViewEngine(app);
