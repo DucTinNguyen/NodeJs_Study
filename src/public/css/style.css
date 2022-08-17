@@ -1,0 +1,8 @@
+h1 {
+    color: red;
+    border:green solid 1px;
+}
+img{
+    display: inline-block;
+    max-width: 100%;
+}
