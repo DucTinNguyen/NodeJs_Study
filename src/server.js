@@ -7,7 +7,11 @@ import connection from './configs/connectDB'
 //set up port
 const app = express()
 const port = process.env.PORT;
-console.log('port',port);
+//set up express giúp cho gửi data từ client lên server và lấy data về
+app.use(express.json());
+app.use(express.urlencoded({
+  extended: true
+}));
 //set up  viewEngine  
 configViewEngine(app);
 //chạy router
