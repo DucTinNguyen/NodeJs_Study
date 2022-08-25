@@ -51,8 +51,12 @@
               <button type="button">
                 <a href="/detail/user/<%=dataUser[i].id%>">Detail</a>
               </button>
-              <button type="button">Edit</button>
-              <button type="button">Delete</button>
+              <form style="display:inline-block" action="/edit-user/<%=dataUser[i].id%>" method="GET">
+                <button type="submit">Edit</button>
+              </form>
+              <form style="display:inline-block" action="/delete-user/<%=dataUser[i].id%>" method="POST">
+                <button type="submit">Delete</button>
+              </form>
             </td>
           </tr>
           <% } %>
